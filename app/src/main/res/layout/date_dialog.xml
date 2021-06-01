@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg">
+
+        <Button
+            android:id="@+id/btn_time"
+            style="@style/AppButtonsTheme"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:drawableStart="@drawable/ic_time"
+            android:fontFamily="@font/raleway"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/select_time"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <Button
+            android:id="@+id/btn_date"
+            style="@style/AppButtonsTheme"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_time"
+            app:layout_constraintEnd_toEndOf="@id/btn_time"
+            app:layout_constraintStart_toStartOf="@id/btn_time"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_date"
+            android:fontFamily="@font/raleway"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/select_date"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey" />
+
+        <Button
+            android:id="@+id/btn_done"
+            style="@style/AppButtonsTheme"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_date"
+            app:layout_constraintEnd_toEndOf="@id/btn_time"
+            app:layout_constraintStart_toStartOf="@id/btn_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

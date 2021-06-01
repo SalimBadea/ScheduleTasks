@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tasks Scheduler</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_channel_id">SALIM_ID</string>
+    <string name="notification_channel_name">SALIM</string>
+    <string name="task_notification_channel_description">Task reminder</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_date_and_time">Select Date and Time</string>
+    <string name="task_content">Task Content</string>
+    <string name="task_title">Task Title</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="add_new_task">Add New Task</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="delete_all_tasks">Delete All Tasks</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="select_time">Select Time</string>
+    <string name="select_date">Select Date</string>
+</resources>
