@@ -10,104 +10,149 @@
         android:id="@+id/add_layout"
         android:layout_width="match_parent"
         android:layout_height="?android:actionBarSize"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@color/purple_700">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/add_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:text="@string/add_new_task"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/raleway"
             android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/add_new_task"
+            android:drawableStart="@drawable/ic_arrow_back"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/white"
-            android:padding="8dp"
-            android:layout_margin="8dp"
-            android:fontFamily="@font/raleway"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <EditText
         android:id="@+id/et_task_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:padding="8dp"
-        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_text_bg"
         android:fontFamily="@font/raleway"
         android:hint="@string/task_title"
+        android:inputType="text"
+        android:padding="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/black"
-        android:background="@drawable/edit_text_bg"
+        android:textColorHint="@color/blueLight"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/add_layout"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/add_layout" />
 
     <EditText
         android:id="@+id/et_task_content"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="@id/et_task_title"
-        app:layout_constraintStart_toStartOf="@id/et_task_title"
-        app:layout_constraintTop_toBottomOf="@id/et_task_title"
-        app:layout_constraintBottom_toTopOf="@id/tv_task_date"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:fontFamily="@font/raleway"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/edit_text_bg"
-        android:textColor="@color/black"
+        android:fontFamily="@font/raleway"
+        android:gravity="start"
+        android:hint="@string/task_content"
+        android:padding="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="@string/task_content"/>
+        android:textColor="@color/black"
+        android:textColorHint="@color/blueLight"
+        app:layout_constraintEnd_toEndOf="@id/et_task_title"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="@id/et_task_title"
+        app:layout_constraintTop_toBottomOf="@id/et_task_title" />
 
     <TextView
         android:id="@+id/tv_task_date"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/et_task_title"
-        app:layout_constraintTop_toBottomOf="@id/et_task_content"
-        app:layout_constraintEnd_toEndOf="@id/et_task_title"
-        android:layout_marginTop="16dp"
-        android:padding="8dp"
-        android:fontFamily="@font/raleway"
-        android:textColor="@color/black"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:hint="@string/select_date_and_time"
+        android:layout_marginTop="8dp"
         android:drawablePadding="8dp"
-        app:drawableStartCompat="@drawable/ic_calendar" />
+        android:fontFamily="@font/raleway"
+        android:hint="@string/select_date_and_time"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:textColorHint="@color/blueLight"
+        app:drawableStartCompat="@drawable/ic_calendar"
+        app:layout_constraintEnd_toEndOf="@id/et_task_title"
+        app:layout_constraintStart_toStartOf="@id/et_task_title"
+        app:layout_constraintTop_toBottomOf="@id/et_task_content" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_bg"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/et_task_title"
+        app:layout_constraintStart_toStartOf="@id/et_task_title"
+        app:layout_constraintTop_toBottomOf="@id/et_task_content">
+
+        <TextView
+            android:id="@+id/tvTimeDateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:text="Time Remaining"
+            android:padding="4dp"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/blueLight" />
+
+        <TextView
+            android:id="@+id/tvTimeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/teal_700" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/save"
+        android:layout_margin="32dp"
         android:background="@drawable/button_bg"
-        android:textColor="@color/white"
         android:fontFamily="@font/raleway"
-        app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintTop_toBottomOf="@id/tv_task_date"
-        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/save"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="32dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_task_date"
+        app:layout_constraintWidth_percent="0.4" />
 
     <Button
         android:id="@+id/btn_cancel"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/cancel"
+        android:layout_margin="16dp"
         android:background="@drawable/button1_bg"
-        android:textColor="@color/white"
         android:fontFamily="@font/raleway"
-        app:layout_constraintWidth_percent="0.4"
-        app:layout_constraintTop_toBottomOf="@id/tv_task_date"
-        app:layout_constraintStart_toEndOf="@id/btn_save"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="16dp"/>
+        app:layout_constraintStart_toEndOf="@id/btn_save"
+        app:layout_constraintTop_toBottomOf="@id/tv_task_date"
+        app:layout_constraintWidth_percent="0.4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

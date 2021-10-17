@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tasks Scheduler</string>
+    <string name="edit">تعديل</string>
+    <string name="cancel">الغاء</string>
+    <string name="select_date_and_time">حدد الوقت والتاريخ</string>
+    <string name="task_content">المحتوي</string>
+    <string name="task_title">العنوان</string>
+    <string name="edit_task">تعديل المهام</string>
+    <string name="add_new_task">اضافة مهام جديدة</string>
+    <string name="save">حفظ</string>
+    <string name="done">تم</string>
+    <string name="delete_all_tasks">حذف الكل</string>
+    <string name="are_you_sure_delete_all_tasks">هل انت متأكد من حذف كل المهام ؟</string>
+    <string name="my_tasks">مهامي</string>
+    <string name="select_time">حدد الوقت</string>
+    <string name="select_date">حدد التاريخ</string>
+    <string name="arabic">عربي</string>
+    <string name="english">English</string>
+    <string name="choose_lang">اختر اللغة</string>
+    <string name="pending">هتتعمل</string>
+    <string name="finished">خلصت</string>
+    <string name="alert">تنبيه !</string>
+    <string name="are_you_sure_delete_this_tasks">هل انت متأكد من حذف هذه المهمة ؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="time_remaining">الوقت المحدد</string>
+    <string name="language">اللغة</string>
+</resources>

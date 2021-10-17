@@ -18,8 +18,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="8dp"
             android:background="@color/white"
+            android:layoutAnimation="@anim/layout_animation"
             tools:listitem="@layout/task_item_view"/>
 
         <ImageButton

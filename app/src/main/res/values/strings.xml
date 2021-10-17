@@ -1,21 +1,33 @@
 <resources>
-    <string name="app_name">Tasks Scheduler</string>
+    <string name="app_name">Jobs Scheduler</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="notification_channel_id">SALIM_ID</string>
-    <string name="notification_channel_name">SALIM</string>
-    <string name="task_notification_channel_description">Task reminder</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="notification_channel_id" translatable="false">SALIM_ID</string>
+    <string name="notification_channel_name" translatable="false">SALIM</string>
+    <string name="task_notification_channel_description" translatable="false">Task reminder</string>
     <string name="edit">Edit</string>
     <string name="cancel">Cancel</string>
     <string name="select_date_and_time">Select Date and Time</string>
-    <string name="task_content">Task Content</string>
-    <string name="task_title">Task Title</string>
-    <string name="edit_task">Edit Task</string>
-    <string name="add_new_task">Add New Task</string>
+    <string name="task_content">Job Content</string>
+    <string name="task_title">Job Title</string>
+    <string name="edit_task">Edit Job</string>
+    <string name="add_new_task">Add New Job</string>
     <string name="save">Save</string>
     <string name="done">Done</string>
-    <string name="delete_all_tasks">Delete All Tasks</string>
-    <string name="my_tasks">My Tasks</string>
+    <string name="delete_all_tasks">Delete All Jobs</string>
+    <string name="my_tasks">My Jobs</string>
     <string name="select_time">Select Time</string>
     <string name="select_date">Select Date</string>
+    <string name="arabic">عربي</string>
+    <string name="english">English</string>
+    <string name="choose_lang">Choose Language</string>
+    <string name="pending">Pending</string>
+    <string name="finished">Finished</string>
+    <string name="alert">Alert!</string>
+    <string name="are_you_sure_delete_all_tasks">Are you sure to delete all tasks ?</string>
+    <string name="are_you_sure_delete_this_tasks">Are you sure to delete this task ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="language">Language</string>
 </resources>

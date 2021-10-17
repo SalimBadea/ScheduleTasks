@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.LanguageActivity"
+    android:background="@drawable/main_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lang_layout"
+        android:layout_width="0dp"
+        android:layout_height="?android:actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple_700">
+
+        <TextView
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/language"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/raleway"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/curved_fifteen_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lang_layout"
+        app:layout_constraintWidth_percent="0.86">
+
+        <ImageView
+            android:id="@+id/ivWorld"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/schedule_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.8"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvLangTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="@string/choose_lang"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivWorld" />
+
+        <TextView
+            android:id="@+id/tvArabic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/arabic"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/tvLangTxt"
+            app:layout_constraintStart_toStartOf="@id/tvLangTxt"
+            app:layout_constraintTop_toBottomOf="@id/tvLangTxt"
+            android:layout_margin="32dp"
+            android:background="@drawable/edit_text_bg"
+            />
+        <TextView
+            android:id="@+id/tvEnglish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/english"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="@id/tvLangTxt"
+            app:layout_constraintStart_toStartOf="@id/tvLangTxt"
+            app:layout_constraintTop_toBottomOf="@id/tvArabic"
+            android:layout_margin="32dp"
+            android:background="@drawable/edit_text_bg"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

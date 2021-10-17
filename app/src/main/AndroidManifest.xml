@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.salim.myapp">
+    package="com.salim.jobScheduler">
 
     <application
+        android:name="com.salim.jobScheduler.TasksScedulerApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,24 +11,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
 
-        <activity android:name=".ui.activities.EditTaskActivity" />
-        <activity android:name=".ui.activities.SplashActivity">
+        <activity android:name="com.salim.jobScheduler.ui.activities.EditTaskActivity" />
+        <activity android:name="com.salim.jobScheduler.ui.activities.LanguageActivity" />
+        <activity android:name="com.salim.jobScheduler.ui.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.AddTaskActivity" />
-        <activity android:name=".ui.activities.MainActivity" />
+        <activity android:name="com.salim.jobScheduler.ui.activities.AddTaskActivity" />
+        <activity android:name="com.salim.jobScheduler.ui.activities.MainActivity" />
 
         <receiver
-            android:name=".utils.MyAlarmService"
+            android:name="com.salim.jobScheduler.utils.MyAlarmService"
             android:enabled="true"
             android:exported="false" />
 
         <service
-            android:name=".utils.NotificationService"
+            android:name="com.salim.jobScheduler.utils.NotificationService"
             android:enabled="true" />
     </application>
 

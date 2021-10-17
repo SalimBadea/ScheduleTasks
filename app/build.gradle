@@ -10,7 +10,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.salim.myapp"
+        applicationId "com.salim.jobScheduler"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -43,6 +43,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
@@ -59,4 +60,10 @@ dependencies {
 
     //WorkManager
     implementation 'android.arch.work:work-runtime:1.0.1'
+
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
 }
