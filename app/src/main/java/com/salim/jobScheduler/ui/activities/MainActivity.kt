@@ -20,8 +20,6 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-//        setupViewPager(pager)
-//        tabs.setupWithViewPager(pager)
         initNavigationManager(R.id.frameLayout)
         tabInit()
 
@@ -31,7 +29,7 @@ class MainActivity : BaseActivity() {
 
     }
 
-    protected fun initNavigationManager(@IdRes frameLayout : Int){
+    protected fun initNavigationManager(@IdRes frameLayout: Int) {
         mNavManager = NavigationManager()
         mNavManager.init(supportFragmentManager, frameLayout)
     }
@@ -44,14 +42,6 @@ class MainActivity : BaseActivity() {
         tabs.addTab(tabOne)
         tabs.addTab(tabTwo)
 
-//        if (!mVendor.isTrainer) {
-//            val tabThree = tabs.newTab()
-//            val tabFour = tabs.newTab()
-//            tabThree.setText(R.string.trainers)
-//            tabFour.setText(R.string.branches)
-//            tabs.addTab(tabThree)
-//            tabs.addTab(tabFour)
-//        }
 
         tabSelect(tabs.getTabAt(0), true)
         tabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
